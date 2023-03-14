@@ -44,7 +44,7 @@ jobs:
       - name: Sync node version and setup cache
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: '16.x'
           cache: 'npm'
 
       - name: Install app dependencies and build web
