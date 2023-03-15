@@ -17,6 +17,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:
