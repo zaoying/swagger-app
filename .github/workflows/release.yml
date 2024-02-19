@@ -1,6 +1,10 @@
 name: 'publish'
 
-on: pull_request
+on: 
+  push:
+    branches: [ "product" ]
+  pull_request:
+    branches: [ "product" ]
 
 jobs:
   create-release:
